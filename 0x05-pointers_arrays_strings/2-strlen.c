@@ -1,16 +1,17 @@
-#include "main.h"
-
 /**
- * mul - multiplies two integers
- * @a: int to be multiplied to b
- * @b: int to be multiplied to a
- * Return: the result of the operation
- */
-int mul(int a, int b)
+ * _strlen - returns the length of a string
+ *
+ * @s: string parameter input
+ *
+ * Return: length of string
+*/
+
+int _strlen(char *s)
 {
-	int c;
+	int counter;
 
-	c = a * b;
+	for (counter = 0; *s != '\0'; ++s)
+		++counter;
 
-	return (c);
+	return (counter);
 }
